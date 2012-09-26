@@ -1,0 +1,393 @@
+/*
+File:			custom.css
+Description:	Custom styles for Thesis
+
+BASIC USAGE:
+
+If you have enabled the custom stylesheet in the Thesis options panel, the <body> tag 
+will be appended with the "custom" class, like so: <body class="custom">. You can use 
+the "custom" class to override *any* CSS declarations contained in the style.css file.
+
+For example, if you wish to change the default link color to green, you would add the 
+following declarations to this file:
+
+	.custom a, .custom a:visited { color: #090; }	<--- This makes links green
+	.custom a:hover { color: #00f; }	<--- This makes links blue when you mouse over them
+
+WHY THIS WORKS:
+
+By using the "custom" class, you are creating more specific CSS declarations for HTML
+elements. CSS styling is applied through rules of specificity, and because declarations
+prepended with .custom are more specific, they get applied when the page is rendered!
+
+More information about styling your Thesis installation using this file can be found
+in the User's Guide:
+	http://diythemes.com/thesis/rtfm/customizing-thesis-with-customcss/
+*/
+
+body {
+  background: url(images/body_bg.gif) repeat-x top left;
+}
+
+#dpnav {
+  width: 934px;
+  height: 90px;
+  float: left;
+  display: block;
+}
+
+#dpnav ul {
+  width: 727px;
+  position: relative;
+  /* float: right; */
+  margin-top: 22px;
+  height: 90px;
+ /*  margin-right: 20px; */
+  z-index: 91900;
+	margin-left: 10px;
+}
+
+#dpnav ul li {
+  display: inline-block;
+  width: 163px;
+  float: left;
+}
+
+#dpnav ul li.home {
+  width: 75px;
+}
+
+
+#dpnav ul li a img {
+  float: left;
+}
+
+#dpnav ul li a {
+  text-indent: -5000em;
+	display: block;
+	float: left;
+	width: 163px;
+	height: 90px;
+}
+
+#dpnav ul li.home a {
+	width: 75px;
+}
+
+
+#dpnav ul li a.inprint {
+	background-image: url(images/in_print.png);
+}
+#dpnav ul li a.inperson {
+	background-image: url(images/in_person.png);
+}
+#dpnav ul li a.online {
+	background-image: url(images/online.png);
+}
+#dpnav ul li a.onair {
+	background-image: url(images/on_air.png);
+}
+#dpnav ul li a.home {
+	background-image: url(images/home.png);
+}
+
+
+#header {
+  width: 934px;
+  margin: 0 auto;
+  display: block;
+  background-color: fuchsia;
+  border: none;
+  padding: 0;
+}
+
+#header img.flower_top_left {
+  position: absolute;
+  margin-top: -75px;
+  margin-left: -135px;
+  z-index: 100;
+}
+
+#logo {
+  width: 0px;
+  height: 0px;
+}
+
+#header_area h1 {
+  text-indent: -9999px;
+}
+
+h1, h2, h3, h4, #created_by, #footer, #dpnavbot, #contact{
+  font-family: 'IM Fell DW Pica', courier, arial, serif;
+  font-size: 110%;
+  font-weight: normal;
+}
+
+h2{
+color: #333;
+}
+
+h3{
+color: #666;
+}
+
+h4{
+font-size: 2em;
+color: #666;
+}
+
+
+a{
+color: #6384AA;
+}
+
+a:hover{
+color: #7CA6D5;
+}
+
+a:visited{
+color: #49627E;
+}
+
+
+
+#created_by{
+text-align: center;
+font-size: 125%;
+margin-bottom: 40px;
+}
+
+#footer{
+text-align: center;
+}
+
+#created_by a{
+color: #666;
+}
+
+#header_area{
+height:90px;
+/* background-color: green; */
+}
+
+#header_area .page{
+/* background-color: fuchsia; */
+height: 0;
+padding: 0;
+}
+
+#content_area .page{
+background: transparent;
+}
+
+#content_area{
+	margin-top: 48px;
+/* 	background-color: rgba(0, 90, 0, 0.6); */
+	z-index: 9999;
+	position: relative;
+}
+
+#content_area .page{
+	margin-top: 48px;
+/*  	background-color: rgba(250, 250, 250, 0.9);  */
+	z-index: 9999;
+	min-height: 600px;
+}
+
+#footer_area{
+	position: relative;
+}
+
+#dpnavbot{
+width:100%;
+}
+
+#contact{
+clear: both;
+color: #666;
+}
+
+#contact p{
+margin-bottom: 10px;
+font-size: 120%;
+}
+
+#contact p a{
+color: #666;
+}
+
+
+#dpnavbot ul li {
+position: relative;
+  display: inline-block;
+  float: left;
+  margin: 0 10px;
+  font-size: 150%;
+}
+
+#dpnavbot ul {
+  width: auto;
+ float: right;
+ margin-top: 20px;
+}
+
+#dpnavbot ul li a {
+color: #333;
+}
+
+#dpnavbot ul li a:hover, a:hover {
+color: #7CA6D5;
+}
+
+
+#footer_area img.flower_bot_right {
+	float: right;
+	position: relative;
+	margin-top: -100px;
+	margin-right: -75px;
+	z-index: 200;
+	margin-bottom: 10px;
+}
+
+#content_box{
+	position: relative;
+	z-index: 100000;
+	/* background-color: rgba(255, 255, 255, 0.75); */
+}
+
+ul.calendarlist{
+list-style: none;
+}
+
+ul.calendarlist li {
+margin-bottom: 10px;
+}
+
+
+/* Custom Homepage */
+
+#content_box #side_loc_indication {
+  margin-top: 165px;
+  float: left;
+  width: 52px;
+  height: 231px;
+  margin-left: -52px;
+}
+
+#content_box #author_intro {
+  background: url(images/home_cont_bg.jpg) no-repeat top left;
+  width: 728px;
+  height: 415px;
+  display: block;
+  float: left;
+}
+
+#content_box #author_intro h2 {
+  text-indent: -9999px;
+  background: transparent url(images/home_cont_dp.png) no-repeat;
+  width: 100%;
+  height: 49px;
+  background-position: 30px 0;
+  margin-top: 20px;
+}
+
+#content_box #author_intro p {
+  float: left;
+  margin: 0 30px 30px 30px;
+}
+
+#content_box #author_intro p a {
+  font-family: courier, sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+#content_box #author_intro p a:hover {
+  color: #7CA6D5;
+}
+
+body.homepage #content_area{
+z-index: 99;
+}
+
+body.homepage #content_area .page{
+	min-height: 400px;
+}
+
+ul.flickrrss{
+list-style: none;
+}
+
+ul.flickrrss li{
+display: inline;
+}
+
+ul.flickrrss li img{
+margin: 2px;
+}
+
+.sidebar h3{
+text-transform: none;
+font-variant: normal;
+font-size: 120%;
+}
+
+.sidebar{
+margin-left: 20px;
+}
+
+#sidebar-1{
+border-left-color: #999;
+}
+
+#aitext{
+text-shadow: 1px 1px 2px black;
+}
+
+#hphl{
+margin-top: 20px;
+margin-left: 340px;
+/*
+background-color: white;
+background-color: rgba(255, 255, 255, 0.5);
+*/
+width: 368px;
+height: 280px;
+padding-top: 10px;
+padding-left: 10px;
+position: relative;
+z-index: 9999;
+}
+
+#content_box #author_intro #hphl p{
+margin: 0;
+padding: 0;
+float: left;
+margin: auto 10px;
+}
+
+#hphl table a{
+  color: #ffffff;
+  font-size: 20px;
+}
+
+#content_box #author_intro #hphl p a{
+font-family: Georgia;
+}
+
+#hphlcontent{
+background-color: rgba(255, 255, 255, 0.1);
+}
+
+#content .format_teaser{
+word-wrap: break-word;
+}
+
+body.homepage #dpnav ul li.home a{
+background-image: none;
+}
+
+body.homepage #dpnavbot a.home{
+visibility: hidden;
+}
